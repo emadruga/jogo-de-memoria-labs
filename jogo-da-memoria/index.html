@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧠 Jogo da Memória — Laboratório 🧠</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-modal" class="modal-overlay">
+        <div class="modal">
+            <h2>Entrar</h2>
+            <p>Contas de laboratório: <code>ana</code> / <code>bruno</code>, senha <code>senha123</code>.</p>
+            <form id="login-form">
+                <label for="login-usuario">Usuário</label>
+                <input type="text" id="login-usuario" required autocomplete="username">
+
+                <label for="login-senha">Senha</label>
+                <input type="password" id="login-senha" required autocomplete="current-password">
+
+                <button type="submit">Entrar</button>
+                <p id="login-erro" class="erro"></p>
+            </form>
+        </div>
+    </div>
+
+    <h1>🧠 Jogo da Memória 🧠</h1>
+    <div id="player-info"></div>
+    <div id="timer">Tempo: 0 segundos</div>
+
+    <div id="toolbar">
+        <button id="nova-partida-button">Nova partida</button>
+        <button id="historico-button">Meu histórico</button>
+        <button id="ranking-button">Ranking</button>
+        <button id="offline-button">Ativar treino offline</button>
+        <button id="tema-button">Tema: claro</button>
+        <button id="logout-button">Sair</button>
+    </div>
+
+    <div class="game-board" id="game-board"></div>
+
+    <div id="historico-panel" class="panel hidden">
+        <h2>📜 Meu histórico</h2>
+        <ol id="historico-list"></ol>
+    </div>
+
+    <div id="ranking-panel" class="panel hidden">
+        <h2>🏆 Ranking — Top 10</h2>
+        <ol id="ranking-list"></ol>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
