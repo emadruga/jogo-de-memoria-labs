@@ -30,12 +30,10 @@ sequência precisa aparecer na requisição que você reenviar depois.
 
 ---
 
-## Pergunta de transferência (responda dentro do segmento 4:30–5:00)
+## Pergunta de fechamento (responda dentro do segmento 4:30–5:00)
 
-- **Matrícula terminada em dígito par:** se o servidor passasse a expirar toda sessão em 5 minutos,
+- Se o servidor passasse a expirar toda sessão em 5 minutos,
   isso substituiria a invalidação no logout? Por quê?
-- **Matrícula terminada em dígito ímpar:** se a sessão fosse um token autocontido, validado só por
-  assinatura e sem estado no servidor, o que tornaria o logout difícil de implementar?
 
 ---
 
